@@ -1,10 +1,102 @@
-.box1{
-    width: 400px;
-    height: 400px;
-    background-color: skyblue;
+
+.navbar{
+    display: flex;
+    max-width: 1320px;
+    padding: 15px 50px;
+    position: fixed;
+    z-index: 9;
+    background-color: #FF9F67;
+    box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
 }
-.box2{
-    width: 400px;
-    height: 400px;
-    background-color: skyblue;
+
+.nav{
+    display: flex;
+    max-width: 1320px;
+    z-index: 9;
+    justify-content: space-between;
+}
+.logo{
+    padding: 10px;
+}
+.size{
+    display: inline-block;
+    padding: 10px;
+    color: white;   
+    font-family: "Mulish", sans-serif;
+}
+.size a{
+    color: white;
+    font-family: "Mulish", sans-serif;
+}
+.size1{
+    width: fit-content;
+    padding: 5px;
+    margin: 10px 30px 10px 30px;
+}
+
+.button{
+    padding: 5px 10px;
+    background-color: transparent;
+    color: white;
+    border: none;
+}
+.button{
+    display: none;
+}
+.button i{
+    font-size: 30px;
+}
+.blog{
+        background-color: transparent;
+        font-size: 16px;
+        border: hidden;
+        color: white;
+}
+
+.btn1{
+    width: 25%;
+    font-family: "Josefin Sans", sans-serif;
+    height: 50px;
+    display: block;
+    background-color: #65c558;
+    padding: 10px 15px;
+    border: none;
+    gap: 20px;
+    color: white;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    transition: all 0.5s linear;
+}
+.btn{
+    width: 25%;
+    height: 50px;
+    gap: 20px;
+    background-color:#93c8cf;
+    padding: 20px 40px;
+    border: 1px solid white;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-family: "Josefin Sans", sans-serif;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    transition: all  0.5s linear;
+    
+}
+
+.btn1:hover{
+    background-color: #c264ee;
+    
+}
+.btn:hover{
+    background-color: #FF9F67;
+    
+}
+@media (max-width:991px)
+{
+    .navbar{
+        width: 100%;
+        flex-direction: column;
+        background-color: burlywood;
+    }
 }
