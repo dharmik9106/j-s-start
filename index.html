@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prectice</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+</head>
+<body>
+    <div class="btnhide"><button>hide</button> </div>
+
+    <div class="btnshow"><button>show</button></div>
+    <div class="btntoggle"><button>toggle</button></div>
+
+    <div class="box1">
+        Lorem ipsum dolor sit amet consectetur
+         adipisicing elit. Beatae deserunt odio 
+         in! Ad, hic quam? Magnam atque fugit labore
+        alias, saepe maiores perspiciatis nam
+           amet delectus optio autem assumenda vitae!
+    </div>
+
+    <div class="box2"></div>
+    
+</body>
+    <script>
+        $(".btnhide").hover(function(){
+            $(".box1").hide("slow")
+        })
+        $(".btnshow").click(function(){
+            $(".box1").show("1000")
+        
+        })
+        $(".btntoggle").hover(function(){
+            $(".box1").toggle("fast")
+            $(".box2").toggle("fast")
+        })
+
+    </script>
+</html>
